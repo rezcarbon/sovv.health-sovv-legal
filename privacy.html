@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sovv — Privacy Policy</title>
+  <meta name="description" content="How sovv handles your data. On-device first, opt-in everywhere, never sold." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://sovv.health/privacy.html" />
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #1c1c1e;
+      --text: #f0f0f5;
+      --muted: #8a8a9a;
+      --accent: #5e5ce6;
+      --link: #7d7bf5;
+      --rule: rgba(255,255,255,0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      margin: 0 0 8px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 44px 0 12px;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin: 28px 0 8px;
+      color: var(--accent);
+    }
+    p, li { color: var(--text); }
+    .meta { color: var(--muted); font-size: 0.92rem; margin: 4px 0 36px; }
+    .tldr {
+      background: var(--surface);
+      border-radius: 14px;
+      padding: 22px 26px;
+      margin: 24px 0 36px;
+    }
+    .tldr h2 { margin-top: 0; font-size: 1.15rem; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: rgba(255,255,255,0.06);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.92em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.97rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--rule);
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-weight: 600; }
+    hr { border: 0; border-top: 1px solid var(--rule); margin: 36px 0; }
+    footer { margin-top: 64px; color: var(--muted); font-size: 0.9rem; }
+    .nav-back {
+      display: inline-block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <a class="nav-back" href="/">&larr; sovv.health</a>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Operated by Mustafar Ltd. · Effective 22 May 2026 · Last updated 22 May 2026.</p>
+
+  <div class="tldr">
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>Your health, sleep, training, and nutrition data never leaves your iPhone.</strong> The overnight engine — readiness score, Focus Index, morning briefing, and the semantic knowledge graph — runs locally during deep sleep on your device. The architecture is required by patent IPOS 10202601003R to be on-device; it's not a marketing choice.</li>
+      <li><strong>We do not sell your data.</strong> Ever.</li>
+      <li><strong>We do not use third-party analytics, advertising SDKs, or trackers.</strong> No Meta SDK, no Google Analytics, no Mixpanel, no AppsFlyer. No App Tracking Transparency prompt because we don't track.</li>
+      <li><strong>The only data that touches our systems</strong> is your sign-in identity (so you can recover your account) and Apple-handled subscription receipts. Both are described in §2 below.</li>
+    </ul>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>sovv is an iOS application that processes training, recovery, sleep, and nutrition data on your device to deliver a personalised morning briefing. The application is published by <strong>Mustafar Ltd.</strong> ("we", "us", "our"), operating under the brand <strong>sovv</strong> at <strong>sovv.health</strong>, and we are the data controller for any personal data described in this policy.</p>
+  <p>Contact for privacy matters: <a href="mailto:privacy@sovv.health">privacy@sovv.health</a>.</p>
+
+  <h2>2. The data we receive</h2>
+
+  <h3>2.1 Account information (sign-in)</h3>
+  <p>When you create an account we store one of the following depending on which sign-in method you use:</p>
+  <ul>
+    <li><strong>Email + password</strong> — your email address and a Firebase-managed password hash (we never see your plaintext password).</li>
+    <li><strong>Sign in with Apple</strong> — Apple's private-relay email and the opaque Apple user identifier. We do not see your real email unless you choose to share it.</li>
+    <li><strong>Sign in with Google</strong> — your Google email and basic profile (display name + avatar URL).</li>
+  </ul>
+  <p>This data is held by <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Authentication</a> (a Google service) acting as our processor under the controller-processor model. It is the only personal data we hold on our servers.</p>
+
+  <h3>2.2 Subscriptions</h3>
+  <p>If you subscribe to sovv Pro, Apple processes the transaction through StoreKit and provides us a receipt indicating <em>that</em> you are entitled to Pro and which SKU (monthly or annual). We do not see your name, billing address, card number, or other payment information — Apple holds all of that. See <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener">Apple's Media Services policy</a> for how Apple handles your purchase data.</p>
+
+  <h3>2.3 Health, sleep, training, and nutrition data</h3>
+  <p>sovv reads the following from Apple Health on your device:</p>
+  <ul>
+    <li>Sleep stages, including N3 (deep) sleep</li>
+    <li>Heart rate variability (HRV, SDNN)</li>
+    <li>Resting heart rate</li>
+    <li>Workouts and active energy</li>
+    <li>On iOS 18 or later with a compatible Apple Watch, the Apple Sleeping Breathing Disturbances signal</li>
+  </ul>
+  <p>You explicitly grant sovv permission to read these types via the Apple Health permission sheet during onboarding. You can review and revoke that permission at any time in the iOS Settings app under <strong>Health → Data Access &amp; Devices → sovv</strong>.</p>
+  <p><strong>This data is read, processed, and stored only on your device.</strong> It is never transmitted to our servers, to any cloud, or to any third party. The patent that protects sovv's core technology (Intellectual Property Office of Singapore application 10202601003R) is structured around on-device offline processing — the design itself prevents network transmission. This is verifiable: every cycle of the overnight engine runs with iOS's <code>requiresNetworkConnectivity = false</code> constraint enforced at the operating-system level.</p>
+
+  <h3>2.4 Data you log inside sovv</h3>
+  <p>Workouts you build, meals you log, race targets you set, station goals, briefings the engine generates, and the insights it derives are stored locally in the app's SwiftData container on your device. None of this is uploaded.</p>
+
+  <h2>3. What our systems see</h2>
+  <p>The narrowest possible set:</p>
+  <ul>
+    <li>Your sign-in identity (see §2.1).</li>
+    <li>Subscription receipts validated against Apple (see §2.2).</li>
+    <li>iOS push-notification tokens, used only to deliver your morning briefing notification.</li>
+  </ul>
+  <p>Server logs at our hosting provider may briefly record IP address and request metadata for routine network-operations reasons. These are not joined to your identity and are aged out in line with our hosting provider's defaults (typically 30 days).</p>
+
+  <h2>4. On-device crash and performance diagnostics</h2>
+  <p>iOS sends sovv an anonymous daily digest of crashes, hangs, and excess CPU / disk events via Apple's <a href="https://developer.apple.com/documentation/metrickit" target="_blank" rel="noopener">MetricKit framework</a>. We persist this digest locally so a developer (or you) can review it for bug reports. <strong>sovv does not upload these diagnostics anywhere.</strong> You can view, export, or wipe them at any time from <strong>Profile → Diagnostics</strong> inside the app.</p>
+
+  <h2>5. What we don't do</h2>
+  <ul>
+    <li>No third-party analytics SDKs (no Mixpanel, Segment, Amplitude, GA4, Heap, Adjust).</li>
+    <li>No advertising identifiers — and no <code>ATT</code> prompt because we don't track.</li>
+    <li>No social-media SDKs.</li>
+    <li>No selling, renting, or licensing of your personal data.</li>
+    <li>No training of third-party machine-learning models on your data.</li>
+    <li>No location collection.</li>
+    <li>No microphone or camera access except when you explicitly open the barcode scanner inside the meal-logger.</li>
+  </ul>
+
+  <h2>6. Legal bases for processing (GDPR / UK GDPR)</h2>
+  <p>If you are in the EU, UK, or another jurisdiction with comparable rules, our legal bases for the limited processing we perform are:</p>
+  <ul>
+    <li><strong>Performance of a contract</strong> — for account creation, sign-in, and subscription management. Without these we cannot provide the Service.</li>
+    <li><strong>Legitimate interests</strong> — for security logs (preventing fraud and abuse), narrowly scoped and balanced against your rights.</li>
+    <li><strong>Consent</strong> — for HealthKit access. You grant it explicitly in the iOS permission sheet; you can withdraw it at any time in the iOS Settings app.</li>
+  </ul>
+
+  <h2>7. Your rights</h2>
+  <p>You can:</p>
+  <ul>
+    <li><strong>Export your data</strong> — Profile → Privacy &amp; Data → Export my data. Generates a JSON file with every record sovv holds on your device.</li>
+    <li><strong>Delete your account and wipe local data</strong> — Profile → Privacy &amp; Data → Delete account &amp; wipe data. Removes your Firebase account and erases every on-device record.</li>
+    <li><strong>Manage your subscription</strong> — iOS Settings → Apple ID → Subscriptions.</li>
+    <li><strong>Revoke Health permissions</strong> — iOS Settings → Health → Data Access &amp; Devices → sovv.</li>
+  </ul>
+  <p>If you are in the EU or UK you also have the rights granted by the GDPR / UK GDPR (access, rectification, erasure, restriction, objection, portability, and the right to lodge a complaint with a supervisory authority). To exercise any of these, write to <a href="mailto:privacy@sovv.health">privacy@sovv.health</a>. We will respond within 30 days.</p>
+  <p>If you are in California, CCPA / CPRA grant you the right to know, delete, correct, and limit use of personal information, plus the right not to be discriminated against for exercising those rights. We do not sell or share personal information as those terms are defined by California law.</p>
+
+  <h2>8. International transfers</h2>
+  <p>Firebase Authentication is provided by Google LLC and may store sign-in records in data centres outside your country of residence. Google relies on the EU Standard Contractual Clauses and equivalent UK and Swiss safeguards for international transfers. By signing in you authorise this transfer to the limited extent it is necessary to provide the Service.</p>
+
+  <h2>9. Children</h2>
+  <p>sovv is intended for adult athletes. It is not directed at children under 13 (or 16 in the EU), and we do not knowingly collect personal information from them. If you believe a child has provided us with personal data, please contact <a href="mailto:privacy@sovv.health">privacy@sovv.health</a> and we will delete it promptly.</p>
+
+  <h2>10. Security</h2>
+  <p>Health and training data never leaves your device; protecting it is the device's job, and we rely on iOS Data Protection (your device passcode plus Secure Enclave hardware encryption) for at-rest protection. The narrow set of data on our servers is protected by Firebase's TLS-in-transit and at-rest encryption.</p>
+
+  <h2>11. Retention</h2>
+  <table>
+    <tr><th>Category</th><th>Retained for</th></tr>
+    <tr><td>Account record (Firebase)</td><td>For as long as your account is active. Deleted within 30 days of you using "Delete account &amp; wipe data".</td></tr>
+    <tr><td>Subscription receipts</td><td>For as long as required by Apple's developer agreements and applicable tax law (typically 7 years).</td></tr>
+    <tr><td>On-device health, training, nutrition data</td><td>Until you delete the app or use "Delete account &amp; wipe data".</td></tr>
+    <tr><td>MetricKit diagnostic digests</td><td>Up to 100 entries on-device; wiped when you tap "Clear all diagnostics" or delete the app.</td></tr>
+    <tr><td>Server access logs</td><td>~30 days, per our hosting provider's defaults.</td></tr>
+  </table>
+
+  <h2>12. Changes to this policy</h2>
+  <p>If we change anything that affects the data we collect or how we use it, we will update the "Last updated" date at the top of this page and surface the change in-app on next launch. Material changes will be announced at least 30 days before they take effect.</p>
+
+  <h2>13. Patent &amp; technology disclosure</h2>
+  <p>sovv's overnight processing engine is protected by Intellectual Property Office of Singapore patent application 10202601003R. The architecture's offline, on-device design is required by the patent claims — it is not a marketing choice. This is the legal mechanism that backs the privacy promises above.</p>
+
+  <h2>14. Contact</h2>
+  <p>Mustafar Ltd.<br />
+  Privacy enquiries: <a href="mailto:privacy@sovv.health">privacy@sovv.health</a><br />
+  Customer support: <a href="mailto:support@sovv.health">support@sovv.health</a><br />
+  Legal: <a href="mailto:legal@sovv.health">legal@sovv.health</a></p>
+
+  <footer>
+    © 2026 Mustafar Ltd. sovv™ and the sovv monogram are trademarks of Mustafar Ltd.
+  </footer>
+</main>
+</body>
+</html>
